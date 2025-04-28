@@ -25,7 +25,8 @@ SECRET_KEY = 'your-secret-key'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# Add the codespace Django REST API endpoint suffix to ALLOWED_HOSTS
+ALLOWED_HOSTS = ['*', '-8000.app.github.dev']
 
 
 # Application definition
